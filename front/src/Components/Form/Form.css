@@ -1,0 +1,70 @@
+form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+form input
+{
+    width:100%;
+    padding:20px;
+    font-size: 1.2rem;
+    border:4px solid lightgray;
+    outline: none;
+    border-radius:20px;
+}
+form input::placeholder
+{
+    color:lightgray;
+    opacity: 0.8;
+}
+form input:focus
+{
+    border:4px solid aquamarine;
+}
+form .OnBlur
+{
+    border:4px solid aqua;
+}
+
+
+form button
+{
+    width:50%;
+    outline:none;
+    border:none;
+    background-color: aquamarine;
+    padding:20px;
+    margin-top:40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    letter-spacing: 3px;
+    color:#212121;
+    cursor:pointer;
+    transition: all ease-in-out 0.3s;
+}
+form button:hover
+{
+    background-color: aqua;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+
+@keyframes InputVibration 
+{
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+}
+
+@media (min-width: 600px)
+{
+    form
+    {
+        width:400px;
+    }
+}

@@ -29,3 +29,12 @@ body
   font-size: 1.4rem;
 }
 
+.App_Title .Title-red
+{
+  color: #f03;
+}
+.App_Title .Title-lowercase
+{
+  text-transform: lowercase;
+  letter-spacing: 0;
+}
